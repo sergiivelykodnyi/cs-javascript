@@ -1,0 +1,32 @@
+{
+  "name": "cs-javascript",
+  "version": "0.0.1",
+  "description": "Algorithms, Data Structures and Design Patterns implemented on JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiivelykodnyi/cs-javascript.git"
+  },
+  "keywords": [
+    "computer-science",
+    "algorithms",
+    "data-structures",
+    "design-patterns",
+    "javascript"
+  ],
+  "author": {
+    "name": "Sergii Velykodnyi",
+    "url": "https://github.com/sergiivelykodnyi"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiivelykodnyi/cs-javascript/issues"
+  },
+  "homepage": "https://github.com/sergiivelykodnyi/cs-javascript#readme",
+  "devDependencies": {
+    "jest": "^25.4.0"
+  }
+}
