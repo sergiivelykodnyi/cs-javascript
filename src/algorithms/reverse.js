@@ -1,11 +1,11 @@
-function reverse_v1(string) {
+function stringReverse_v1(string) {
   return string
     .split("")
     .reverse()
     .join("");
 }
 
-function reverse_v2(string) {
+function stringReverse_v2(string) {
   let result = "";
 
   for (const character of string) {
@@ -15,12 +15,12 @@ function reverse_v2(string) {
   return result;
 }
 
-function reverse_v3(string) {
+function stringReverse_v3(string) {
   return string.split("").reduce((result, character) => character + result);
 }
 
 module.exports = {
-  reverse_v1,
-  reverse_v2,
-  reverse_v3
+  stringReverse_v1,
+  stringReverse_v2,
+  stringReverse_v3 
 }
