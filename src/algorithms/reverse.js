@@ -1,11 +1,13 @@
-function stringReverse_v1(string) {
-  return string
-    .split("")
-    .reverse()
-    .join("");
+/**
+ * String Reversal
+ * @param {string} string 
+ * @returns {string}
+ */
+function stringReverse(string) {
+  return string.split("").reverse().join("");
 }
 
-function stringReverse_v2(string) {
+function stringReverse2(string) {
   let result = "";
 
   for (const character of string) {
@@ -15,12 +17,24 @@ function stringReverse_v2(string) {
   return result;
 }
 
-function stringReverse_v3(string) {
+function stringReverse3(string) {
   return string.split("").reduce((result, character) => character + result);
 }
 
+/**
+ * Integer Reversal
+ * @param {number} number
+ * @returns {number}
+ */
+function integerReverse(number) {
+  const reverse = stringReverse(number.toString());
+
+  return parseInt(reverse) * Math.sign(number);
+}
+
 module.exports = {
-  stringReverse_v1,
-  stringReverse_v2,
-  stringReverse_v3 
+  stringReverse,
+  stringReverse2,
+  stringReverse3,
+  integerReverse
 }

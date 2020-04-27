@@ -1,4 +1,16 @@
-function isPalindrome_v1(string) {
+/**
+ * Palindrome
+ * @param {*} string
+ * @returns {string}
+ */
+function isPalindrome(string) {
+  const cleaned = string.replace(/\W/g, "").toLowerCase();
+  const reverse = cleaned.split("").reverse().join("");
+
+  return cleaned === reverse;
+}
+
+function isPalindrome2(string) {
   const validChars = "abcdefghijklmnopqrstuvwxyz".split("");
   const stringChars = string
     .toLowerCase()
@@ -12,7 +24,7 @@ function isPalindrome_v1(string) {
   return stringChars.join("") === stringChars.reverse().join("");
 }
 
-function isPalindrome_v2(string) {
+function isPalindrome3(string) {
   const cleaned = string.replace(/\W/g, "").toLowerCase();
   const length = cleaned.length - 1;
 
@@ -21,15 +33,8 @@ function isPalindrome_v2(string) {
     .every((char, index) => char === cleaned[length - index]);
 }
 
-function isPalindrome_v3(string) {
-  const cleaned = string.replace(/\W/g, "").toLowerCase();
-  const reverse = cleaned.split("").reverse().join("");
-
-  return cleaned === reverse;
-}
-
 module.exports = {
-  isPalindrome_v1,
-  isPalindrome_v2,
-  isPalindrome_v3
+  isPalindrome,
+  isPalindrome2,
+  isPalindrome3,
 }

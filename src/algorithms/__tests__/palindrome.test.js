@@ -1,22 +1,22 @@
-const { isPalindrome_v1, isPalindrome_v2, isPalindrome_v3 } = require("../palindrome");
+const { isPalindrome, isPalindrome2, isPalindrome3 } = require("../palindrome");
 
 describe("Palindrome", () => {
   test("Should return true", () => {
-    expect(isPalindrome_v1("Cigar? Toss it in a can. It is so tragic")).toEqual(true);
+    expect(isPalindrome("Cigar? Toss it in a can. It is so tragic")).toEqual(true);
   });
   test("Should return true", () => {
-    expect(isPalindrome_v2("Cigar? Toss it in a can. It is so tragic")).toEqual(true);
+    expect(isPalindrome2("Cigar? Toss it in a can. It is so tragic")).toEqual(true);
   });
   test("Should return true", () => {
-    expect(isPalindrome_v3("Cigar? Toss it in a can. It is so tragic")).toEqual(true);
+    expect(isPalindrome3("Cigar? Toss it in a can. It is so tragic")).toEqual(true);
   });
   test("Should return false", () => {
-    expect(isPalindrome_v1("sit ad est love")).toEqual(false);
+    expect(isPalindrome("sit ad est love")).toEqual(false);
   });
   test("Should return false", () => {
-    expect(isPalindrome_v2("sit ad est love")).toEqual(false);
+    expect(isPalindrome2("sit ad est love")).toEqual(false);
   });
   test("Should return false", () => {
-    expect(isPalindrome_v3("sit ad est love")).toEqual(false);
+    expect(isPalindrome3("sit ad est love")).toEqual(false);
   });
 });
