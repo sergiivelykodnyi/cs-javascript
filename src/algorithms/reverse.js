@@ -1,6 +1,6 @@
 /**
  * String Reversal
- * @param {string} string 
+ * @param {string} string
  * @returns {string}
  */
 function stringReverse(string) {

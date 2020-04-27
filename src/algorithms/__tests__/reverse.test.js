@@ -18,4 +18,3 @@ describe("Integer Reversal", () => {
     expect(integerReverse(-1200)).toEqual(-21);
   });
 });
-

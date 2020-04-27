@@ -1,7 +1,7 @@
 /**
  * Binary Search
- * @param {number} value 
- * @param {number[]} array 
+ * @param {number} value
+ * @param {number[]} array
  */
 function binarySearch(value, array) {
   let lowIndex = 0;
