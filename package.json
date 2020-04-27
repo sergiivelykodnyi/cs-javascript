@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest --watchAll"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sergiivelykodnyi/cs-javascript.git"
@@ -27,6 +32,9 @@
   },
   "homepage": "https://github.com/sergiivelykodnyi/cs-javascript#readme",
   "devDependencies": {
-    "jest": "^25.4.0"
+    "husky": "^4.2.5",
+    "jest": "^25.4.0",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1"
   }
 }
