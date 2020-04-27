@@ -1,4 +1,4 @@
-const {binarySearch} = require("../search");
+const { binarySearch } = require("../search");
 
 describe("Search", () => {
   test("Binary Search", () => {

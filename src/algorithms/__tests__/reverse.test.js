@@ -1,4 +1,4 @@
-const { stringReverse, stringReverse2, stringReverse3, integerReverse  } = require("../reverse");
+const { stringReverse, stringReverse2, stringReverse3, integerReverse } = require("../reverse");
 
 describe("String Reversal", () => {
   test("stringReverse", () => {

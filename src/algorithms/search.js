@@ -26,5 +26,5 @@ function binarySearch(value, array) {
 }
 
 module.exports = {
-  binarySearch
-}
+  binarySearch,
+};

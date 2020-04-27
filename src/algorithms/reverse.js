@@ -36,5 +36,5 @@ module.exports = {
   stringReverse,
   stringReverse2,
   stringReverse3,
-  integerReverse
-}
+  integerReverse,
+};
