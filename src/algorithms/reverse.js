@@ -32,9 +32,21 @@ function integerReverse(number) {
   return parseInt(reverse) * Math.sign(number);
 }
 
+function arrayReverse(array) {
+  const result = [];
+
+  let i = array.length - 1;
+  for (i; i >= 0; i--) {
+    result.push(array[i]);
+  }
+
+  return result;
+}
+
 module.exports = {
   stringReverse,
   stringReverse2,
   stringReverse3,
   integerReverse,
+  arrayReverse,
 };
